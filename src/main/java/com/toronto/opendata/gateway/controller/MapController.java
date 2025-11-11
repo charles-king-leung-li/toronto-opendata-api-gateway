@@ -2,7 +2,6 @@ package com.toronto.opendata.gateway.controller;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,7 +20,6 @@ public class MapController {
     
     private final MapServiceClient mapServiceClient;
     
-    @Autowired
     public MapController(MapServiceClient mapServiceClient) {
         this.mapServiceClient = mapServiceClient;
     }
